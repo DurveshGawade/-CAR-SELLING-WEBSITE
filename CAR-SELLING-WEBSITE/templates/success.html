@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:wght@300&family=Poppins:wght@100;300;400;500;600&display=swap');
+:root{
+    --green:rgba(30, 235, 12, 0.932);
+    /* --green:rgba(235, 83, 12, 0.932); */
+    --light-green:#97f784;
+    /* --light-green:#b9572a; */
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid rgba(0,0,0,.1);
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+   
+}
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+.logo{
+    margin-top:15px ;
+    align-items: center;
+    /* text-align: center; */
+    margin-left: 14px;
+    font-size: 3.5rem;
+    color: var(--black);
+    font-weight: bolder;
+    text-decoration: none;
+}
+.logo span{
+    color: var(--green);
+    text-decoration: none;
+
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background:var(--light-green);
+    color:var(--black);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.btn:hover{
+    background:var(--green);
+}
+.heading{
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.heading h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.heading h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: orange;
+}
+.image img{
+    width: 4%;
+    height: 2%;
+}
+.image p{
+  text-align: center;
+}
+.container{
+    width: 100vw;
+    height: 55vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:4rem;
+    padding: 0 1rem;
+}
+.img{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.img img{
+    width: 70%;
+    height: 70%;
+}
+.avtar{
+    width: 70px;
+}
+.navigate{
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255);
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 5rem;
+}
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <a  class="logo"><span>VVD </span>CARS & Services</a>
+    </div>
+    <div class="heading">
+        <h1>Your Payment is Succesfull</h1>
+        <h2>Thankyou for Shopping</h2>
+
+    </div>
+    <div class="image">
+        <p><img  src="../static/image/check-circle.svg" alt=""></p>
+    </div>
+    <div class="container">
+       
+        <div class="img">
+        
+            <img src="../static/image/success.svg" >
+        </div>
+        <div class="navigate">
+            <a href="/home" class="btn"> home</a>
+            <a href="/vehicle" class="btn">Cars</a>
+        </div>
+        </div>
+</body>
+</html>

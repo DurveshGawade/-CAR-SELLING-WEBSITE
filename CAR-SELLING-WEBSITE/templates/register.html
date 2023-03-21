@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VVD Cars and Services</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:wght@300&family=Poppins:wght@100;300;400;500;600&display=swap');
+:root{
+    --green:rgba(30, 235, 12, 0.932);
+    /* --green:rgba(235, 83, 12, 0.932); */
+    --light-green:#97f784;
+    /* --light-green:#b9572a; */
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid rgba(0,0,0,.1);
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+   
+}
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+.logo{
+    margin-top:15px ;
+    align-items: center;
+    /* text-align: center; */
+    margin-left: 14px;
+    font-size: 3.5rem;
+    color: var(--black);
+    font-weight: bolder;
+    text-decoration: none;
+}
+.logo span{
+    color: var(--green);
+    text-decoration: none;
+
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background:var(--light-green);
+    color:var(--black);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.btn:hover{
+    background:var(--green);
+}
+
+form{
+    margin:2rem;
+    text-align: center;
+    padding:2rem;
+    width:40rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    background: #fff;
+}
+form .buttons{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+}
+
+form .btn{
+    display: block;
+    width:100%;
+    margin:.5rem 0;
+}
+
+form .box{
+    margin:.7rem 0;
+    /* width: 100%; */
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+    border:var(--border);
+    padding:1rem 1.2rem;
+    border-radius: .5rem;
+}
+
+form p{
+    padding:1rem 0;
+    font-size: 1.5rem;
+    color:var(--light-color);
+}
+
+form p a{
+    color:var(--green);
+    text-decoration: underline;
+}
+
+form h3{
+    padding-bottom:1rem;
+    font-size: 2.5rem;
+    color:var(--black);
+    text-transform: uppercase;
+}
+
+
+
+.container{
+    width: 100vw;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:4rem;
+    padding: 0 1rem;
+}
+.img{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.img img{
+    width: 90%;
+}
+.avtar{
+    width: 100px;
+}
+.login-container {
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  
+}
+.heading{
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.heading h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.heading h2{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: orange;
+}
+input{
+    width: 90%;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <a  class="logo"><span>VVD </span>CARS & Services</a>
+    </div>
+<div class="heading">
+    <h1>welcome to VVd cars and services</h1>
+    <h2>Buy  your car at best price from home</h2>
+</div>
+  
+    <div class="container">
+       
+         <div class="img">
+         
+             <img src="../static/image/login.svg" >
+         </div>
+         <div class="login-container">
+
+            <form action="/add_user" method="post">
+
+                <h3>Register here</h3>
+                <input type="text" placeholder="Name" name = "uname" class="box" />
+                <input type="email" placeholder="email" name="uemail" class="box" />
+                <input type="password" placeholder="password" name="upassword" class="box" />
+                <input type="submit" value="Register" class="btn" />
+                
+                
+                <p>Already a Member?  <a href="/">Login here</a></p>
+            </form>
+        </div>
+       
+</body>
+
+</html>

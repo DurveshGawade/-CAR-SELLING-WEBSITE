@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Selling Website</title>
+    <!-- font awesome cdnjs  -->
+   
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{url_for('static',filename ='/css/style.css')}}" />
+
+</head>
+
+<body>
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="/home" class="logo"><span>VVD </span>CARS  & Services</a>
+        <nav class="navbar">
+            <a href="/home">home</a>
+            <a href="/vehicle">vehicles</a>
+            <a href="#services">services</a>
+            <a href="#featured">featured</a>
+            <a href="#reviews">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div id="login-btn">
+            <a class="btn" href="/logout">logout</a>
+            <i class="fas fa-sign-out"></i>
+        </div>
+    </header>
+    
+    <section class="home" id="home">
+        <h3 class="home-parallax">find your car</h3>
+
+        <img class="home-parallax" src="../static/image/car-home2.png" alt="" />
+        <a href="/vehicle" class="btn home-parallax">explore cars</a>
+    </section>
+    <section class="about" id="about">
+        <h1>About us</h1>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="../static/image/car-5.png" alt="">
+            </div>
+            <div class="about-text">
+             
+                <p>VVD CARS is a leading digital marketplace and solutions provider for the automotive industry that
+                    connects car shoppers with sellers. Launched in 2014 and headquartered in Mumbai, the Company
+                    empowers shoppers with the data, resources and digital tools needed to make informed buying
+                    decisions and seamlessly connect with automotive retailers. In a rapidly changing market, In
+                    2018, VVD CARS acquired Dealer Inspire®, an innovative technology company building solutions that
+                    future-proof dealerships with more efficient operations, a faster and easier car buying process, and
+                    connected digital experiences that sell and service more vehicles.</p>
+                <p>We Have Our 30 branches all over india and we have good customer reviews. you Can buy car at cheap
+                    prices.
+                    Also we have car services available for our customer .
+                    We provid best cars available all over india . So what you waiting for buy your car now.
+                </p>
+                <br>
+                <br>
+                <a href="#" class="about-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-home"></i>
+            <div class="content">
+                <h3>30+</h3>
+                <p>branches</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>3000+</h3>
+                <p>cars sold</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-users"></i>
+            <div class="content">
+                <h3>700+</h3>
+                <p>happy clients</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>400+</h3>
+                <p>news cars</p>
+            </div>
+        </div>
+    </section>
+  
+<section class="newvehicles">
+        <h1 class="heading">Popular <span> vehicles</h1>
+        <div class="container">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="car-image">
+
+                            <img src="../static/image/mercedes-1600.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-caption">
+
+                            <h3>Top Rated</h3>
+                            <h4>mercedes-1600</h4>
+                            <div class="price"> <span>price : </span> 55.53/- Lakhs  </div>
+                            <p>
+                                Popular
+                                <span class="fas fa-circle"></span> 2018
+                                <span class="fas fa-circle"></span> automatic
+                                <span class="fas fa-circle"></span> petrol
+                                <span class="fas fa-circle"></span> 255kmh
+                            </p>
+                           
+                            <a href="/vehicle" class="btn">check out</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="car-image">
+
+                            <img src="../static/image/suzuki_vitara.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-caption">
+                            <!-- d-none d-md-block -->
+                            <h3>Value For Money</h3>
+                            <h4>Suzuki Vitara</h4>
+                            <div class="price"> <span>price :   </span> 7.69/- Lakhs</div>
+                            <p>
+                                Popular
+                                <span class="fas fa-circle"></span> 2017
+                                <span class="fas fa-circle"></span>  Manual
+                                <span class="fas fa-circle"></span> Diesel
+                                <span class="fas fa-circle"></span> 180kmh
+                            </p>
+                            <a href="/vehicle" class="btn">check out</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="car-image">
+                            <img src="../static/image/toyoto-fortuner-.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-caption">
+                            <h3>new model</h3>
+                            <h4>Toyoto Fortuner</h4>
+                            <div class="price"> <span>price : </span>  16.49/- Lakhs- </div>
+                            <p>
+                                new
+                                <span class="fas fa-circle"></span> 2022
+                                <span class="fas fa-circle"></span> automatic
+                                <span class="fas fa-circle"></span> petrol
+                                <span class="fas fa-circle"></span> 250kmh
+                            </p>
+                            <a href="/vehicle" class="btn">check out</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="car-image">
+                            <img src="../static/image/bmw.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-caption">
+                            <h3>Advance featured</h3>
+                            <h4>bmw black 760i</h4>
+                            <div class="price"> <span>price : </span> 47.81/- Lakhs </div>
+                            <p>
+                                top rated
+                                <span class="fas fa-circle"></span> 2019
+                                <span class="fas fa-circle"></span> automatic
+                                <span class="fas fa-circle"></span> Diesel
+                                <span class="fas fa-circle"></span> 300kmh
+                            </p>
+                            <a href="/vehicle" class="btn">check out</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="car-image">
+                            <img src="../static/image/car-1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-caption">
+                            <h3>favorite </h3>
+                            <h4> Mahindra Scorpio</h4>
+                            <div class="price"> <span>price : </span> 47.81/- Lakhs </div>
+                            <p>
+                                Advance
+                                <span class="fas fa-circle"></span> 2020
+                                <span class="fas fa-circle"></span> Manual
+                                <span class="fas fa-circle"></span> Diesel
+                                <span class="fas fa-circle"></span> 225kmh
+                            </p>
+                            <a href="/vehicle" class="btn">check out</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="car-image">
+                            <img src="../static/image/mahindra-xuv500.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-caption">
+                            <h3>new model</h3>
+                            <h4>Mahindra Xuv500</h4>
+                            <div class="price"> <span>price : </span> 20.11/- Lakhs </div>
+                            <p>
+                                new
+                                <span class="fas fa-circle"></span> 2022
+                                <span class="fas fa-circle"></span> Manual
+                                <span class="fas fa-circle"></span> petrol
+                                <span class="fas fa-circle"></span> 260kmh
+                            </p>
+                            <a href="/vehicle" class="btn">check out</a>
+                        </div>
+                    </div>
+                </div>
+                <button style="color: black;" class="carousel-control-prev" type="button"
+                    data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button style="color: black;" class="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h1 class="heading">our <span>services</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-car"></i>
+                <h3>car selling</h3>
+                <p>
+                    Buy Your car in New Delhi, Mumbai, Chennai, Hyderabad, Bangalore,
+                    Pune, Kolkata, Ahmedabad and all other cities in India. We will help you sell your car at the
+                    convenience of your doorsteps.
+                    Know car's worth and set the right asking price
+                </p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-tools"></i>
+                <h3>parts repair</h3>
+                <p>
+                    Get Your Car Completely Checked With Expert Mechanics. Free Pick-Up And Drop Available. GoBumpr, The
+                    Leading Car Service Platform In Thane. Book Now & Get Free Pick-Up/Drop. Same Day Delivery. Free
+                    Pick-up & Drop. 100% Quality Service.
+                </p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-car-crash"></i>
+                <h3>car insurance</h3>
+                <p>
+                    Insure Car At Personalized Prices And Experience Effortless Process Of Purchase & Claim. We Get Your
+                    Car Picked Up Within Hours*, Repair & Deliver At Your Door-Step In 3 Days*. Instant Renewal In 2
+                    Mins.
+                </p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-car-side"></i>
+
+                <h3>Tyres & wheel Care</h3>
+                <p>
+                    Get All Range of Tyres with Good Grip and Cornering, Dual Compound Technology. Get More Fuel
+                    Efficiency, Smooth Wet and Dry Braking and More. Visit a Dealer Near You. Long Haul. Mighty
+                    Performance. Better Durability. Superior Road Grip.
+                </p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-duotone fa-car"></i>
+                <h3>Car Cleaning</h3>
+                <p>
+                    Book Car Cleaning and Washing at Best Service Centers and Garages near your city. Rubbing
+                    Polishing, Ceramic Coating, Dry Cleaning, all services Clean your car and increase your car life.
+                </p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-car-battery"></i>
+                <h3>battery replacement</h3>
+                <p>
+                    Get the right battery for your vehicle. Top Battery Brands. Free Delivery & Installation. Get
+                    Delivery in Just 4 hours. Best Price, Free Shipping & Installation. Call Now. Free Shipping. 100%
+                    Genuine Products. Cash-on-Delivery. Wide Range of Brands.
+                </p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-gas-pump"></i>
+                <h3>Custom Services</h3>
+                <p>
+                    We offers over 300+ top-rated Car Repairs and Car Services in India, from your Basic Car
+                    Service to Denting Painting, Road-Side Assistance, Detailing Services, Custom Services and much
+                    more.When you book your car service with our website, peace of mind is what we guarantee.
+                </p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 support</h3>
+                <p>
+                    VVD car provides 24/7 on the spot breakdown support, flat tyre puncture repairs, fixes for starting
+                    problems, battery jumpstart & towing service to customers through our annual subscriptions &
+                    on-demand. We will love helping you ask your doubt to us. We provide best customer suport </p>
+                <a href="#" class="btn"> read more</a>
+            </div>
+        </div>
+        <div class="facilites">
+            <h1 style="margin-top: 45px; text-align: center;">Why VVD cars and Services?</h1>
+            <br>
+            <br>
+            <div class="box-container">
+                <div class="box">
+                    <div>
+
+                        <img src="../static/image/facilities1.png" alt="">
+                    </div>
+                <span class="likh">Free Pick up</span>
+                </div>
+                <div class="box">
+                    <div>   <img src="../static/image/facilities2.png" alt=""></div>
+                 
+                    <span class="likh">100% geninune car spare</span>
+                </div>
+                <div class="box">
+                    <div>
+
+                        <img src="../static/image/facilities4.png" alt="">
+                    </div>
+                    <span class="likh">Reasonable price</span>
+                </div>
+                <div class="box">
+                    <div>
+
+                        <img src="../static/image/facilities3.png" alt="">
+                    </div>
+                    <span class="likh">Technological Workshop</span>
+                </div>
+            </div>
+           
+
+            <br>
+            <br>
+            <dl>
+                <h1>Services provided</h1>
+                <br>
+                <ul>
+                    <h2>With 20+ workshops present across in India, We offers affordable car repair and
+                        maintenance services such as:</h2>
+                    <br>
+                    <div >
+                        <li>Car Periodic Services</li>
+                        <li>Car Battery Replacement Services</li>
+                        <li>Car AC Service and Repairs</li>
+                        <li>Car Accessories</li>
+                    </div>
+                    <div  >
+                        <li>Car Detailing Services</li>
+                        <li>Car Clutch and Fitments Services</li>
+                        <li>Car Denting and Painting Services</li>
+                        <li>Car Tyre and Wheel care Services</li>
+                    </div>
+
+                </ul>
+
+            </dl>
+            <br>
+            <br>
+            <dl>
+                <h1>Multi Payment options</h1>
+                <br>
+                <ul>
+                    <div >
+                        <li>Cash/ Cheque</li>
+                        <li>UPI (Google Pay, Paytm UPI, Amazon UPI, PhonePe)</li>
+                        <li>Credit/Debit Cards</li>
+                        <li>E-Wallets (Paytm, Amazon Pay, PhonePe, Mobikwik)</li>
+
+                    </div>
+                    <div >
+                        <li>CRED Pay</li>
+                        <li>Pay Cash/Online After Service</li>
+                        <li>Pay Later</li>
+                        <li>EMI</li>
+                    </div>
+
+                </ul>
+
+            </dl>
+            <br> <br>
+            <h1>Services At Your Convenience</h1>
+            <p style="font-size: large;">VVD offers a plethora of car services at the convenience of a tap in india You
+                can easily
+                schedule a car booking at your suitable time. We offer Free Pick-up and Drop for all the services and
+                assigned a dedicated Service Buddy to make your car services hassle free. You can also add voice
+                instructions for a comfortable pick-up.
+            </p>
+
+
+
+        </div>
+    </section>
+
+
+    </section>
+    <section class="featured" id="featured">
+
+        <h1 class="heading"> <span>featured</span> cars </h1>
+
+        <div class="swiper featured-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="../static/image/honda-brio.jpg" alt="">
+                    <div class="content">
+                        <h3>Honda Brio</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price"> 13.22 Lakhs/-</div>
+                        <a href="/vehicle" class="btn">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="../static/image/hyundai-alcazar.png" alt="">
+                    <div class="content">
+                        <h3>Hyundai Alcazar</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price"> 23.53 lakhs/-</div>
+                        <a href="/vehicle" class="btn">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="../static/image/car-1.png" alt="">
+                    <div class="content">
+                        <h3>Mahindra Scorpio</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price"> 37.52 lakhs/-</div>
+                        <a href="/vehicle" class="btn">check out</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="../static/image/honda-hrv.png" alt="">
+                    <div class="content">
+                        <h3>Honda HRV Sport</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price"> 27.10 lakhs/-</div>
+                        <a href="/vehicle" class="btn">check out</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="../static/image/car-5.png" alt="">
+                    <div class="content">
+                        <h3>Kia Sportage</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price"> 32.20 lakhs/-</div>
+                        <a href="/vehicle" class="btn">check out</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="../static/image/car-3.png" alt="">
+                    <div class="content">
+                        <h3>Nissan A8</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price"> 40.52 Lakhs/-</div>
+                        <a href="/vehicle" class="btn">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="../static/image/mahindra-xuv500.webp" alt="">
+                    <div class="content">
+                        <h3>Mahindra Xuv500</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <!-- <i class="fas fa-star"></i> -->
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price"> 33.56 lakhs/-</div>
+                        <a href="/vehicle" class="btn">check out</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+        <div class="swiper featured-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="../static/image/skoda-slaviar.jpg" alt="">
+                    <div class="content">
+                        <h3>Skoda Slaviar</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <!-- <i class="fas fa-star"></i> -->
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price"> 22.52 Lakhs/-</div>
+                        <a href="/vehicle" class="btn">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="../static/image/car-6.png" alt="">
+                    <div class="content">
+                        <h3>Hyundai Creata</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <!-- <i class="fas fa-star-half-alt"></i> -->
+                        </div>
+                        <div class="price"> 15.63 Lakhs/-</div>
+                        <a href="/vehicle" class="btn">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="../static/image/car-7.png" alt="">
+                    <div class="content">
+                        <h3>kia scorpion</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price"> 31.52 lakhs/-</div>
+                        <a href="/vehicle" class="btn">check out</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="../static/image/mahindra-verito.png" alt="">
+                    <div class="content">
+                        <h3>Mahindra Verito</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price"> 9.12 lakhs/-</div>
+                        <a href="/vehicle" class="btn">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="../static/image/Honda-WR-V.png" alt="">
+                    <div class="content">
+                        <h3>Honda WR-V</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price"> 11.44 lakhs/-</div>
+                        <a href="/vehicle" class="btn">check out</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="../static/image/Hyundai-Venue.png" alt="">
+                    <div class="content">
+                        <h3>Hyundai Venue</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price"> 10.71 lakhs/-</div>
+                        <a href="/vehicle" class="btn">check out</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="../static/image/Hyundai-i20.png" alt="">
+                    <div class="content">
+                        <h3>Hyundai i20</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price"> 7.98 lakhs/-</div>
+                        <a href="/vehicle" class="btn">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="../static/image/Hyundai-Verna.png" alt="">
+                    <div class="content">
+                        <h3>Hyundai Verna</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price"> 14.44 lakhs/-</div>
+                        <a href="/vehicle" class="btn">check out</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="../static/image/Mahindra-Thar.png" alt="">
+                    <div class="content">
+                        <h3>Mahindra Thar</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price"> 44.7 lakhs/-</div>
+                        <a href="/vehicle" class="btn">check out</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="../static/image/maruti_sizuki-baleno.png" alt="">
+                    <div class="content">
+                        <h3>Maruti Suzuki Baleno</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="price"> 13.25 Lakhs/-</div>
+                        <a href="/vehicle" class="btn">check out</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+     <section class="contact" id="contact">
+        <div class="Hey">
+            <h1 class="heading"><span>contact</span> us</h1>
+            <div class="row">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30158.707745885247!2d72.85098086365937!3d19.114741022189662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b61b41dfb131%3A0xa668297563ddac31!2sAndheri%20East%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1645887297400!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                <div>
+                    <form action="">
+                        <h3>get in touch</h3>
+                        <input type="text" placeholder="your name" class="box" />
+                        <input type="email" placeholder="your email" class="box" />
+                        <input type="tel" placeholder="subject" class="box" />
+                        <textarea placeholder="your message" class="box" cols="30" rows="10"></textarea>
+                        <input type="submit" value="send message" class="btn" onclick="showMessage()" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section class="reviews" id = "reviews">
+        <h1 class="heading">Customer <span> Reviews</span></h1>
+        <div class="container">
+            <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+                   
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="image-area">
+                            <img src="../static/image/male-1.jpg"  alt="">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Sanjay Chopra</h3>
+                            <h4>Business Man</h4>
+                            <p>I like the filters but wish they would add a filter for cars that have a clean title,
+                                salvage title, or are totalled.. Too many cars being sold on this site that are wrecked
+                                or salvaged and you have to investigate. It use to be a much higher quality car website.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-area">
+                            <img src="../static/image/female-1.jpg" alt="">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Shruti Sinha</h3>
+                            <h4>Doctor</h4>
+                            <p>I found the car I wanted on here. I purchased directly through the dealership after
+                                seeing it on your wesbite. The pictures were very nice. I didn't have any problems
+                                getting
+                                in touch with the dealership afterwards. I would recommend this site to other car
+                                shoppers out there.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-area">
+                            <img src="../static/image/male-2.jpg" alt="">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Ajay Negi</h3>
+                            <h4>Software Engineer</h4>
+                            <p>Buying experience is awesome and Dealer also helped us to find the correct model as per
+                                requirement. The riding experience is just freaking fantastic and ride quality is
+                                awesome as well. Looks are very aggressive, in each and every model there is LED
+                                taillights which are cool and not like other cars in base model there are only halogen
+                                and in top there is LED. </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-area">
+                            <img src="../static/image/female-2.jpg" alt="">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Pooja Sharma</h3>
+                            <h4>Marketing Director</h4>
+                            <p> I had driven my car for 10000 kms and this service cost was only 5,000 Rs. It has
+                                perfect maintenance costs and not much if your driving is not as rash Mileage in city is
+                                around 14-15 km/l and on highways, if you are cruising around 80-90 km/h then you will
+                                get mileage of more then 20 km/l.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-area">
+                            <img src="../static/image/male-3.jpg" alt="">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Sudhir Anand</h3>
+                            <h4>Teacher</h4>
+                            <p>I listed my car for months and paid the fee. I included lots of beautiful pictures and a
+                                low price to go with it and still couldn't get it sold. I barely received 1 lead the
+                                whole entire time. Would not use again.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-area">
+                            <img src="../static/image/female-5.jpg" alt="">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Neha Bansal</h3>
+                            <h4>Web Designer</h4>
+                            <p>It's been 1 year since I had bought this car and completed 11K kms so far. Pros: Smooth
+                                and comfortable ride at low speeds. Spacious Cabin, 5 people can sit comfortably Refined
+                                petrol engine Low Maintenance Cost Auto A/C works good Easy to drive in City Good
+                                mileage (Around 14 in city and 17-18 in highway.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-area">
+                            <img src="../static/image/male-4.jpg" alt="">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Arjun Desai</h3>
+                            <h4>Sales Manager</h4>
+                            <p>Like your User interface impressed with your website .The pictures were very nice. I
+                                didn't have any problems getting in touch with the
+                                dealership afterwards. I would recommend this site to other car shoppers out there.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-area">
+                            <img src="../static/image/female-4.jpg" alt="">
+                        </div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Surbhi Prabhudeva</h3>
+                            <h4>Customer Service Manager</h4>
+                            <p>Found the car i want here .Best service and great work done. Loved the facility of car
+                                pick up and drop. Value for money! Thank you so much for the great service. Highly
+                                recommended!</p>
+                        </div>
+                    </div>
+                </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+           
+    </section> 
+
+    <section class="footer" id="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>our branches</h3>
+                <a href="#footer"> <i class="fas fa-map-marker-alt"></i> Mumbai </a>
+                <a href="#footer"> <i class="fas fa-map-marker-alt"></i> Delhi </a>
+                <a href="#footer"> <i class="fas fa-map-marker-alt"></i> Kolkata</a>
+                <a href="#footer"> <i class="fas fa-map-marker-alt"></i> Pune </a>
+                <a href="#footer"> <i class="fas fa-map-marker-alt"></i> Dehradun </a>
+                <a href="#footer"> <i class="fas fa-map-marker-alt"></i> Banglore </a>
+                <a href="#footer"> <i class="fas fa-map-marker-alt"></i> Chennai</a>
+                <a href="#footer"> <i class="fas fa-map-marker-alt"></i> jaipur</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i> home </a>
+                <a href="/vehicle"> <i class="fas fa-arrow-right"></i> vehicles </a>
+                <a href="#services"> <i class="fas fa-arrow-right"></i> services </a>
+                <a href="#featured"> <i class="fas fa-arrow-right"></i> featured </a>
+                <a href="#reviews"> <i class="fas fa-arrow-right"></i> reviews </a>
+                <a href="#contact"> <i class="fas fa-arrow-right"></i> contact </a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#footer"> <i class="fas fa-phone"></i> +91-9564590388 </a>
+                <a href="#footer"> <i class="fas fa-phone"></i> 022-2846-1891 </a>
+                <a href="#footer"> <i class="fas fa-envelope"></i> vvdcars@gmail.com </a>
+                <a href="#footer"> <i class="fas fa-map-marker-alt"></i> mumbai, india - 400093 </a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#footer"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#footer"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#footer"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#footer"> <i class="fab fa-linkedin"></i> linkedin </a>
+            </div>
+
+        </div>
+        <div class="credit"> VVD Cars find your car here @all rights reserved </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../static/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            function showMessage() {
+                alert("Your Response is submitted thank you");
+            }
+        </script>
+</body>
+
+</html>

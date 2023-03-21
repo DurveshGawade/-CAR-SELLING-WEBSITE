@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:wght@300&family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
+
+ *{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+   
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: rgb(239, 243, 242)/*#f2f2f2*/;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid rgb(135, 86, 158)/*#ccc*/;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.star{
+    color: red;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.header .navbar{
+  margin-right: 25px;
+  margin-top: 26px;
+}
+.header .navbar a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #130f40;
+}
+.header .logo{
+  margin-left: 30px;
+    font-size: 2.2rem;
+    margin-top: 25px;
+    color: #130f40;
+    font-weight: 700;
+    text-decoration: none;
+}
+.header .logo span{
+    color:#97f784;
+    text-decoration: none;
+
+}
+.header .navbar a:hover{
+    color:#97f784;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body  style="background-color:#fff;">
+    <header class="header">
+        <a href="/home" class="logo"><span>VVD </span>CARS</a>
+        <h2  style="font-size: 30px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Please pay by this form</h2>
+        <div class=".homebtn">
+            <nav class="navbar">
+                <a href="/vehicle"> back </a>
+            </nav>
+        </div>
+    </header>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user" ></i> Full Name<span class="star">*</span></label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter your full name" required>
+            <label for="number"><i class="fa fa-envelope"></i> Contact No<span class="star">*</span></label>
+            <input type="text" id="email" name="email" placeholder="Enter your contact no" required>
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address<span class="star">*</span></label>
+            <input type="text" id="adr" name="address" placeholder="flat, blg name, street" required>
+            <label for="city"><i class="fa fa-institution"></i> City<span class="star">*</span></label>
+            <input type="text" id="city" name="city" placeholder="Enter your City here" required>
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="Maharashtra">
+              </div>
+              <div class="col-50">
+                <label for="zip">Pin<span class="star">*</span></label>
+                <input type="text" id="zip" name="zip" placeholder="400067" required>
+              </div>
+            </div>
+          </div>
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <img src="../static/image/visa1.jpg" alt="" height="50px" width="40%" style="color: antiquewhite;margin-bottom: 0px;">
+            </div>
+          <form action="/pay" method="post">
+            <label for="name"> Name of Customer<span class="star">*</span></label>
+            <input type="text" id="name" name="bname" placeholder="Enter your Full Name" required>
+            <label for="carname">Name of Car<span class="star">*</span></label>
+            <input type="text" id="carname" name="purpose" placeholder="Suzuki Vitara" required>
+            <label for="email">Email Id<span class="star">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email id" required>
+            <label for="amount">Amount<span class="star">*</span></label>
+            <input type="text" id="amount" name="amount" placeholder="Enter Amount" required>
+            
+        <input style="background-color: rebeccapurple;" type="submit" value="Continue to checkout" class="btn" >
+        </form>
+        
+          </div>
+        </div>
+    
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>1</b></span></h4>
+      <p><a href="#">Price<a> <span class="price">30,00,000/-</span></p>
+      
+      <hr>
+<br><br>
+      <p>Total <span class="price" style="color:black"><b>30,00,000/-</b></span></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
