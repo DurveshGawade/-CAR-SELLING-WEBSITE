@@ -35,13 +35,11 @@ https://user-images.githubusercontent.com/88550895/162898526-0465cb17-37d6-4332-
 
 ![Screenshot (341)](https://user-images.githubusercontent.com/88550895/162899774-d6a4ed05-6510-4ce7-ad05-4fcdfc4d7558.png)
 
-https://user-images.githubusercontent.com/88550895/162900999-2d2676b1-5792-4948-a53c-cf15a9dc4dbc.mp4
 
 <h2 align="center"> Reviews </h2>
 
 ![Screenshot (342)](https://user-images.githubusercontent.com/88550895/162901073-5b53f61e-e6f3-4fd9-892c-22426b141c50.png)
 
-https://user-images.githubusercontent.com/88550895/162901080-cacc65d5-76d4-4186-a039-3926920ca710.mp4
 
 <h2 align="center"> Footer </h2>
 
@@ -51,7 +49,6 @@ https://user-images.githubusercontent.com/88550895/162901080-cacc65d5-76d4-4186-
 
 ![Screenshot (344)](https://user-images.githubusercontent.com/88550895/162901328-77beb49c-0d97-441e-9212-b6ce0c04499a.png)
 
-https://user-images.githubusercontent.com/88550895/162901365-1bee123c-3959-4ba1-8c94-5a8f690643cc.mp4
 
 <h2 align="center"> Payment page </h2>
 
